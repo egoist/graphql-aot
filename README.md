@@ -22,7 +22,12 @@ module.exports = {
     rules: [
       {
         test: /\.gql$/,
-        loader: 'graphql-aot/loader'
+        loader: 'graphql-aot/loader',
+        options: {
+          defaultClientOptions: {
+            uri: 'https://api.graph.cool/simple/v1/cjc32dadu12pf0184otnrztnq'
+          }
+        }
       }
     ]
   }
