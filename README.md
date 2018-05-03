@@ -81,7 +81,7 @@ console.log(data.allFiles)
 
 #### defaultClientOptions
 
-Options for the default Apollo client.
+[Options for the default Apollo client](https://www.apollographql.com/docs/react/essentials/get-started.html#configuration).
 
 #### client
 
