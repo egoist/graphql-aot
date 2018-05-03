@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`importFrom has import 1`] = `"require(\\"/Users/egoist/dev/graphql-aot/lib/noop.gql?query=%0A%20%20%20%20allFiles%20%7B%0A%20%20%20%20%20%20id%0A%20%20%20%20%7D%0A%20%20\\");"`;
+
+exports[`importFrom no import 1`] = `
+"graphql\`
+    allFiles {
+      id
+    }
+  \`;"
+`;

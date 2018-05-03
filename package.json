@@ -1,0 +1,44 @@
+{
+  "name": "graphql-aot",
+  "version": "0.0.0",
+  "description": "Run GraphQL query ahead of time (i.e. at build time)",
+  "repository": {
+    "url": "egoist/graphql-aot",
+    "type": "git"
+  },
+  "main": "lib/index.js",
+  "files": [
+    "./babel.js",
+    "./loader.js",
+    "./lib"
+  ],
+  "scripts": {
+    "test": "npm run lint && jest",
+    "lint": "xo"
+  },
+  "author": "egoist <0x142857@gmail.com>",
+  "license": "MIT",
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "dependencies": {
+    "apollo-boost": "^0.1.4",
+    "graphql": "^0.13.2",
+    "graphql-tag": "^2.9.2",
+    "loader-utils": "^1.1.0",
+    "node-fetch": "^2.1.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.46",
+    "eslint-config-rem": "^3.0.0",
+    "jest-cli": "^22.4.3",
+    "webpack": "^4.6.0",
+    "xo": "^0.18.0"
+  },
+  "xo": {
+    "extends": "rem",
+    "envs": [
+      "jest"
+    ]
+  }
+}
