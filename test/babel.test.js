@@ -1,5 +1,7 @@
 const babel = require('@babel/core')
 
+const LOADER_QUERY = '/lib/noop.gql?query=%0A%20%20%20%20allFiles%20%7B%0A%20%20%20%20%20%20id%0A%20%20%20%20%7D%0A%20%20'
+
 test('main', () => {
   const { code } = babel.transform(`
   graphql\`
@@ -14,7 +16,7 @@ test('main', () => {
     ]
   })
 
-  expect(code).toContain('graphql-aot/lib/noop.gql?query=%0A%20%20%20%20allFiles%20%7B%0A%20%20%20%20%20%20id%0A%20%20%20%20%7D%0A%20%20')
+  expect(code).toContain(LOADER_QUERY)
 })
 
 describe('importFrom', () => {
@@ -55,6 +57,7 @@ describe('importFrom', () => {
     ]
   })
 
-    expect(code).toMatchSnapshot()
+    expect(code).toContain(LOADER_QUERY)
+    expect(code).not.toContain(`import { graphql } from 'foo'`)
   })
 })
