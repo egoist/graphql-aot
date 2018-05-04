@@ -3,7 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "start": "webpack-serve"
+  },
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
     "html-webpack-plugin": "^3.2.0",
     "webpack": "^4.6.0",
     "webpack-serve": "^0.3.2"

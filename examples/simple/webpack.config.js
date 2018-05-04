@@ -18,6 +18,17 @@ module.exports = {
             uri: 'https://api.graph.cool/simple/v1/cixmkt2ul01q00122mksg82pn'
           }
         }
+      },
+      {
+        test: /\.js$/,
+        loader: 'babel-loader',
+        exclude: [/node_modules/],
+        options: {
+          babelrc: false,
+          plugins: [
+            require.resolve('../../babel')
+          ]
+        }
       }
     ]
   },
