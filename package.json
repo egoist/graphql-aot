@@ -39,6 +39,9 @@
     "extends": "rem",
     "envs": [
       "jest"
+    ],
+    "ignore": [
+      "examples/**"
     ]
   }
 }
