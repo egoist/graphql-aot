@@ -78,19 +78,10 @@ exports[`main 1`] = `
 /*!*******************************************!*\\\\
   !*** ./test/fixtures/loader-only/foo.gql ***!
   \\\\*******************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! exports provided: data, loading, networkStatus, stale, default */
+/***/ (function(module) {
 
-\\"use strict\\";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__[\\"default\\"] = ({
-  \\"data\\": {
-    \\"allFiles\\": []
-  },
-  \\"loading\\": false,
-  \\"networkStatus\\": 7,
-  \\"stale\\": false
-});
+module.exports = {\\"data\\":{\\"allFiles\\":[]},\\"loading\\":false,\\"networkStatus\\":7,\\"stale\\":false};
 
 /***/ }),
 
@@ -104,6 +95,7 @@ __webpack_require__.r(__webpack_exports__);
 \\"use strict\\";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _foo_gql__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./foo.gql */ \\"./test/fixtures/loader-only/foo.gql\\");
+var _foo_gql__WEBPACK_IMPORTED_MODULE_0___namespace = /*#__PURE__*/Object.assign({}, _foo_gql__WEBPACK_IMPORTED_MODULE_0__, {\\"default\\": _foo_gql__WEBPACK_IMPORTED_MODULE_0__});
 
 
 

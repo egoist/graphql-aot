@@ -18,6 +18,7 @@ test('main', async () => {
       rules: [
         {
           test: /\.gql$/,
+          type: 'json',
           loader,
           options: {
             defaultClientOptions: {
