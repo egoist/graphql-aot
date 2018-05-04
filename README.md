@@ -21,11 +21,12 @@ module.exports = {
   module: {
     rules: [
       {
+        type: 'json', // <== IMPORTANT!
         test: /\.gql$/,
         loader: 'graphql-aot/loader',
         options: {
           defaultClientOptions: {
-            uri: 'https://api.graph.cool/simple/v1/cjc32dadu12pf0184otnrztnq'
+            uri: 'https://api.graph.cool/simple/v1/cixmkt2ul01q00122mksg82pn'
           }
         }
       }
@@ -34,13 +35,13 @@ module.exports = {
 }
 ```
 
-📝 __allFiles.gql__:
+📝 __query.gql__:
 
 ```graphql
 {
-  allFiles {
+  allPosts (first: 5) {
     id
-    filename
+    title
   }
 }
 ```
@@ -48,9 +49,9 @@ module.exports = {
 📝 __index.js__:
 
 ```js
-import { data } from './allFiles.gql'
+import { data } from './query.gql'
 
-console.log(data.allFiles)
+console.log(data.allPosts)
 ```
 
 If you want to use inline graphql tag, you will __also__ need the babel plugin:
@@ -70,14 +71,14 @@ module.exports = {
 ```js
 const { data } = graphql`
 {
-  allFiles {
+  allPosts (first: 5) {
     id
-    filename
+    title
   }
 }
 `
 
-console.log(data.allFiles)
+console.log(data.allPosts)
 ```
 
 ## API

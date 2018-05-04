@@ -1,0 +1,7 @@
+# Try to write your query here
+{
+  allPosts (first: 5) {
+    id
+    title
+  }
+}

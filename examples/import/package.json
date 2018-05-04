@@ -1,0 +1,12 @@
+{
+  "name": "import",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.6.0",
+    "webpack-serve": "^0.3.2"
+  },
+  "dependencies": {}
+}
