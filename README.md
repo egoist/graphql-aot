@@ -93,6 +93,14 @@ console.log(data.allPosts)
 
 Provide your own Apollo client instance.
 
+#### getVariables
+
+- __Type__: `function`
+
+A function to get the variables you want to use with the [`client.query()`](https://www.apollographql.com/docs/react/api/apollo-client.html#ApolloClient.query) call.
+
+The signature is: `loaderContext => any`
+
 ### babelOptions
 
 #### tagName
