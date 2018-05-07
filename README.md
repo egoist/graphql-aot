@@ -125,7 +125,8 @@ The above code will only work when you have following config for the babel plugi
 
 ```js
 {
-  importFrom: 'a-module'
+  importFrom: 'a-module',
+  tagName: 'gql'
 }
 ```
 
