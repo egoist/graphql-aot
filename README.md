@@ -113,7 +113,21 @@ The signature is: `loaderContext => any`
 - __Type__: `string`
 - __Default__: `undefined`
 
-Ensure the template literal identifier is imported from a module.
+Ensure the tagged template literal identifier is imported from a module.
+
+```js
+import { gql } from 'a-module'
+
+const result = gql`query { id }`
+```
+
+The above code will only work when you have following config for the babel plugin:
+
+```js
+{
+  importFrom: 'a-module'
+}
+```
 
 #### removeImportStatement
 
