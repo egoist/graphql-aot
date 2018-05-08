@@ -1,6 +1,6 @@
 {
   "name": "graphql-aot",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "description": "Run GraphQL query ahead of time (i.e. at build time)",
   "repository": {
     "url": "egoist/graphql-aot",
