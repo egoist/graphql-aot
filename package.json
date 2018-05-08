@@ -8,9 +8,9 @@
   },
   "main": "lib/index.js",
   "files": [
-    "./babel.js",
-    "./loader.js",
-    "./lib"
+    "babel.js",
+    "loader.js",
+    "lib"
   ],
   "scripts": {
     "test": "npm run lint && jest",
