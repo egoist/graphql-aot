@@ -78,10 +78,14 @@ exports[`main 1`] = `
 /*!*******************************************!*\\\\
   !*** ./test/fixtures/loader-only/foo.gql ***!
   \\\\*******************************************/
-/*! exports provided: allFiles, default */
-/***/ (function(module) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-module.exports = {\\"allFiles\\":[]};
+\\"use strict\\";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__[\\"default\\"] = ({
+  \\"allFiles\\": []
+});
 
 /***/ }),
 
@@ -95,7 +99,6 @@ module.exports = {\\"allFiles\\":[]};
 \\"use strict\\";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _foo_gql__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./foo.gql */ \\"./test/fixtures/loader-only/foo.gql\\");
-var _foo_gql__WEBPACK_IMPORTED_MODULE_0___namespace = /*#__PURE__*/Object.assign({}, _foo_gql__WEBPACK_IMPORTED_MODULE_0__, {\\"default\\": _foo_gql__WEBPACK_IMPORTED_MODULE_0__});
 
 
 
@@ -188,7 +191,6 @@ exports[`use schema 1`] = `
 \\"use strict\\";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _query_gql__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./query.gql */ \\"./test/fixtures/use-schema/query.gql\\");
-var _query_gql__WEBPACK_IMPORTED_MODULE_0___namespace = /*#__PURE__*/Object.assign({}, _query_gql__WEBPACK_IMPORTED_MODULE_0__, {\\"default\\": _query_gql__WEBPACK_IMPORTED_MODULE_0__});
 
 
 
@@ -198,10 +200,14 @@ var _query_gql__WEBPACK_IMPORTED_MODULE_0___namespace = /*#__PURE__*/Object.assi
 /*!********************************************!*\\\\
   !*** ./test/fixtures/use-schema/query.gql ***!
   \\\\********************************************/
-/*! exports provided: hello, default */
-/***/ (function(module) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-module.exports = {\\"hello\\":\\"hello egoist hmm\\"};
+\\"use strict\\";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__[\\"default\\"] = ({
+  \\"hello\\": \\"hello egoist hmm\\"
+});
 
 /***/ })
 

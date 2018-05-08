@@ -21,7 +21,6 @@ module.exports = {
   module: {
     rules: [
       {
-        type: 'json', // <== IMPORTANT!
         test: /\.gql$/,
         loader: 'graphql-aot/loader',
         options: {
@@ -49,9 +48,9 @@ module.exports = {
 📝 __index.js__:
 
 ```js
-import { allPosts } from './query.gql'
+import data from './query.gql'
 
-console.log(allPosts)
+console.log(data.allPosts)
 ```
 
 If you want to use inline graphql tag, you will __also__ need the babel plugin:
@@ -118,7 +117,7 @@ Ensure the tagged template literal identifier is imported from a module.
 ```js
 import { gql } from 'a-module'
 
-const result = gql`query { id }`
+const data = gql`query { id }`
 ```
 
 The above code will only work when you have following config for the babel plugin:
