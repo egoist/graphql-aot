@@ -3,6 +3,8 @@ const { promisify } = require('util')
 const webpack = require('webpack')
 const { makeExecutableSchema } = require('graphql-tools')
 
+jest.setTimeout(10000)
+
 const loader = require.resolve('../lib/loader')
 
 test('main', async () => {

@@ -49,9 +49,9 @@ module.exports = {
 📝 __index.js__:
 
 ```js
-import { data } from './query.gql'
+import { allPosts } from './query.gql'
 
-console.log(data.allPosts)
+console.log(allPosts)
 ```
 
 If you want to use inline graphql tag, you will __also__ need the babel plugin:
@@ -69,7 +69,7 @@ module.exports = {
 📝 __index.js__:
 
 ```js
-const { data } = graphql`
+const { allPosts } = graphql`
 {
   allPosts (first: 5) {
     id
@@ -78,7 +78,7 @@ const { data } = graphql`
 }
 `
 
-console.log(data.allPosts)
+console.log(allPosts)
 ```
 
 ## API

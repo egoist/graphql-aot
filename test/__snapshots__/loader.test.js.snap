@@ -78,10 +78,10 @@ exports[`main 1`] = `
 /*!*******************************************!*\\\\
   !*** ./test/fixtures/loader-only/foo.gql ***!
   \\\\*******************************************/
-/*! exports provided: data, loading, networkStatus, stale, default */
+/*! exports provided: allFiles, default */
 /***/ (function(module) {
 
-module.exports = {\\"data\\":{\\"allFiles\\":[]},\\"loading\\":false,\\"networkStatus\\":7,\\"stale\\":false};
+module.exports = {\\"allFiles\\":[]};
 
 /***/ }),
 
@@ -198,10 +198,10 @@ var _query_gql__WEBPACK_IMPORTED_MODULE_0___namespace = /*#__PURE__*/Object.assi
 /*!********************************************!*\\\\
   !*** ./test/fixtures/use-schema/query.gql ***!
   \\\\********************************************/
-/*! exports provided: data, default */
+/*! exports provided: hello, default */
 /***/ (function(module) {
 
-module.exports = {\\"data\\":{\\"hello\\":\\"hello egoist hmm\\"}};
+module.exports = {\\"hello\\":\\"hello egoist hmm\\"};
 
 /***/ })
 
